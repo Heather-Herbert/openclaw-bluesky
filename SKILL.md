@@ -1,6 +1,21 @@
+---
+name: bluesky
+description: "Bluesky/AT Protocol orchestration skill for authenticated interaction with the Bluesky Social network: post, reply, like, repost, quote, bookmark, and upload media."
+metadata:
+  {
+    "openclaw": {
+      "emoji": "🦋",
+      "env": {
+        "BSKY_PDS": "https://bsky.social",
+        "BSKY_HANDLE": "",
+        "BSKY_APP_PASSWORD": ""
+      }
+    }
+  }
+---
+
 # Bluesky Skill
 
-## Description
 Advanced Bluesky/AT Protocol orchestration skill. This skill allows for authenticated interaction with the Bluesky Social network, including robust handling of rich text, media uploads, and thread management.
 
 ## Provenance & Source
