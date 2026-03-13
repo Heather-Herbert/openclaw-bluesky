@@ -7,9 +7,10 @@ metadata:
       "emoji": "🦋",
       "env": {
         "BSKY_PDS": "https://bsky.social",
-        "BSKY_HANDLE": "",
-        "BSKY_APP_PASSWORD": ""
-      }
+        "BSKY_HANDLE": "<required>",
+        "BSKY_APP_PASSWORD": "<required>"
+      },
+      "secrets": ["BSKY_APP_PASSWORD"]
     }
   }
 ---
