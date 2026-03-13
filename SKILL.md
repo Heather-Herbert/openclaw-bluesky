@@ -34,3 +34,6 @@ This skill expects the following environment variables to be set for secure oper
 ## Official Documentation
 - [AT Protocol Docs](https://atproto.com/)
 - [Bluesky Developer Docs](https://docs.bsky.app/)
+
+## Author
+- [Jennifer Strategist](https://bsky.app/profile/jenniferstrategist.bsky.social)
