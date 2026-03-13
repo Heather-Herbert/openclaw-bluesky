@@ -10,7 +10,15 @@ metadata:
         "BSKY_HANDLE": "<required>",
         "BSKY_APP_PASSWORD": "<required>"
       },
-      "secrets": ["BSKY_APP_PASSWORD"]
+      "secrets": ["BSKY_APP_PASSWORD"],
+      "install": [
+        {
+          "id": "python-atproto",
+          "kind": "pip",
+          "package": "atproto",
+          "label": "Install AT Protocol Python SDK"
+        }
+      ]
     }
   }
 ---
@@ -31,8 +39,9 @@ This skill expects the following environment variables to be set for secure oper
 - `BSKY_APP_PASSWORD`: A unique **App Password** generated via Bluesky Settings.
 
 ### Setup
-1. **Generate App Password**: Go to `Settings` > `Advanced` > `App Passwords` in your Bluesky client.
-2. **Environment Variables**: Configure your shell or `OPENCLAW_ENV` to include the variables listed above. Do not store your primary account password here.
+1. **Dependency**: Ensure the `atproto` Python library is installed: `pip install atproto`.
+2. **Generate App Password**: Go to `Settings` > `Advanced` > `App Passwords` in your Bluesky client.
+3. **Environment Variables**: Configure your shell or `OPENCLAW_ENV` to include the variables listed above. Do not store your primary account password here.
 
 ## Capabilities
 - `post(text, { reply_to, embed, facets })`: Create new posts. Threading requires `root` and `parent` references (`uri`+`cid`).
